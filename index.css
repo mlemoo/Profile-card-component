@@ -1,0 +1,151 @@
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --font-family: 'Poppins', sans-serif;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+.attribution a { color: white }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+body {
+
+  font-family: var(--font-family);
+  font-weight: var(--fw-regular);
+ background-color: var(--Dark-cyan);
+background-image: url("images/bg-pattern-bottom.svg"), url("images/bg-pattern-top.svg");
+background-position: 110% 700%, -10% -500% ;
+background-repeat: no-repeat, no-repeat;
+background-size: 700px,700px;
+
+
+
+  display: grid;
+  place-content: center;
+  
+}
+
+.card__bg{
+
+  border-top-left-radius:1rem;
+  border-top-right-radius: 1rem;
+  
+}
+
+
+.profile__picture {
+
+  position: absolute;
+  top: 250px;
+  left: 690px;
+  border-radius: 60px;
+  border: 0.3rem white solid;
+}
+
+.profile__card {
+  display: grid;
+  place-content: center;
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+  
+}
+ .name, .number {
+  font-weight: var(--fw-bold);
+  
+ }
+
+ .age, .type, .place {
+  font-weight: var(--fw-regular);
+  color: var(--Dark-gray);
+ }
+
+ .place{
+  font-size: 0.8rem;
+
+ }
+
+.flex__group__1{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  
+}
+
+.place {
+  justify-self: center;
+  margin-top: 0.5rem;
+}
+.profile__card__bottom{
+
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: white;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top: 0.01rem rgb(218, 218, 218) solid;
+  
+
+  
+}
+
+
+
+.flex__group__2, .flex__group__3, .flex__group__4{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+
+ .type {
+  font-size: 0.6rem;
+}
